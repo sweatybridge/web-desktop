@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+<!--
+#foldheader{cursor:hand ; font-weight:bold ;
+list-style-image: url(../image/fold.gif)}
+#foldinglist{list-style-image: url(../image/list.gif)}
+//-->
+</style>
+<style type="text/css">BODY
+	{MARGIN: 0px}
+</style>
+<script language="JavaScript1.2">
+<!--
+var head="display:''"
+img1=new Image()
+img1.src="../image/fold.gif"
+img2=new Image()
+img2.src="../image/open.gif"
+
+function change(){
+if(!document.all)
+return
+if (event.srcElement.id=="foldheader") {
+var srcIndex = event.srcElement.sourceIndex
+var nested = document.all[srcIndex+1]
+if (nested.style.display=="none") {
+nested.style.display=''
+event.srcElement.style.listStyleImage="url(../image/open.gif)"
+}
+else {
+nested.style.display="none"
+event.srcElement.style.listStyleImage="url(../image/fold.gif)"
+}
+}
+}
+document.onclick=change
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body background="../image/bg.gif" onLoad="MM_preloadImages('../image/close-over.gif','../image/close-down.gif')" scroll=auto>
+<table width="324" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="23" background="../image/top.jpg">
+<div align="right"><font size="2"><strong>Folders&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/" onClick="javascript:window.close(); return false;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('close','','../image/close-over.gif',1)" onMouseDown="MM_swapImage('close','','../image/close-down.gif',1)"><img src="../image/close-up.gif" name="close" width="20" height="17" hspace="10" border="0"></a></strong></font></div></td>
+  </tr>
+</table>
+<li id="foldheader">Desktop</li>
+	<ul id="foldinglist" style="display:none"};>
+		
+  <li id="foldheader">My Computer</li>
+			<ul id="foldinglist" style="display:none"};>
+				<li id="foldheader">Local Disk (C:)</li>
+					<ul id="foldinglist" style="display:none"};>
+						
+      <li><a href="uses%20of%20comp.htm" target="mainFrame">Uses of Computers</a></li>
+						<li id="foldheader">How Computers Work</li>
+							<ul id="foldinglist" style="display:none"};>
+								
+        <li><a href="how%20comp%20work.htm" target="mainFrame">Intro</a></li>
+								
+        <li><a href="os.htm" target="mainFrame">Operating System</a></li>
+								
+        <li><a href="bus.htm" target="mainFrame">The Bus</a></li>
+								
+        <li><a href="ram.htm" target="mainFrame">Memory</a></li>
+								
+        <li><a href="cpu.htm" target="mainFrame">CPU</a></li>
+								
+        <li><a href="id.htm" target="mainFrame">Input Devices</a></li>
+								
+        <li><a href="od.htm" target="mainFrame">Output Devices</a></li>
+							</ul>
+						
+      <li id="foldheader">Programming Langs</li>
+							<ul id="foldinglist" style="display:none"};>
+								
+        <li><a href="pl.htm" target="mainFrame">Intro</a></li>
+								
+        <li><a href="ml.htm" target="mainFrame">Machine Lang</a></li>
+								
+        <li><a href="al.htm" target="mainFrame">Assembly Lang</a></li>
+								<li id="foldheader">High-level Lang</li>
+									<ul id="foldinglist" style="display:none"};>
+										
+          <li><a href="hl.htm" target="mainFrame">intro</a></li>
+										
+          <li><a href="fm.htm" target="mainFrame">Flow-Matic</a></li>
+										
+          <li><a href="fortran.htm" target="mainFrame">Fortran</a></li>
+										
+          <li><a href="basic.htm" target="mainFrame">Basic</a></li>
+										
+          <li><a href="oop.htm" target="mainFrame">OOP Lang</a></li>
+										
+          <li><a href="other.htm" target="mainFrame">Others</a></li>
+									</ul>
+							</ul>
+						<li id="foldheader">Types of Computers</li>
+							<ul id="foldinglist" style="display:none"};>
+								
+        <li><a href="dna.htm" target="mainFrame">Digital & Analog</a></li>
+								
+        <li><a href="rca.htm" target="mainFrame">Computer Ability</a></li>
+							</ul>
+						
+      <li><a href="networks.htm" target="mainFrame">Networks</a></li>
+					</ul>
+				<li>DVD/CD-RW Drive (D:)</li>
+			</ul>
+		<li id="foldheader">My Documents</li>
+			<ul id="foldinglist" style="display:none"};>
+				<li id="foldheader">History</li>
+					<ul id="foldinglist" style="display:none"};>
+						
+      <li><a href="../my-doc/begin.htm" target="mainFrame">Beginnings</a></li>
+						
+      <li><a href="../my-doc/fpc.htm" target="mainFrame">Punch Cards</a></li>
+						
+      <li><a href="../my-doc/pmc.htm" target="mainFrame">Precursor</a></li>
+					</ul>
+				<li id="foldheader">Developments</li>
+					<ul id="foldinglist" style="display:none"};>
+						
+      <li><a href="../my-doc/ecc.htm" target="mainFrame">Early Calculators</a></li>
+						
+      <li><a href="../my-doc/eeu.htm" target="mainFrame">Edvac,Eniac & Univac</a></li>
+					</ul>
+				
+    <li><a href="../my-doc/ictc.htm" target="mainFrame">Transistor & ICTC</a></li>
+				
+    <li><a href="../my-doc/future.htm" target="mainFrame">Future of Computers</a></li>
+			</ul>
+	</ul>
+
+<script language="JavaScript1.2">
+<!--
+function get_cookie(Name) {
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+} 
+if (get_cookie(window.location.pathname) != ''){
+var openresults=get_cookie(window.location.pathname).split(" ")
+for (i=0 ; i < openresults.length ; i++){
+foldinglist[openresults[i]].style.display=''
+document.all[foldinglist[openresults[i]].sourceIndex -
+1].style.listStyleImage="url(open.gif)"
+}
+}
+
+if (document.all){
+var nodelength=foldinglist.length-1
+var nodes=new Array(nodelength)
+var openones=''
+}
+
+function check(){
+for (i=0 ; i <= nodelength ; i++){
+if (foldinglist[i].style.display=='')
+openones=openones + " " + i
+}
+document.cookie=window.location.pathname+"="+openones
+}
+
+if (document.all)
+document.body.onunload=check
+//-->
+</script>
+</body>
+</html>
