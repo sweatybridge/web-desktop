@@ -1,4 +1,4 @@
-fake-desktop
+web-desktop
 ============
 
 A website that's designed to look like a Windows XP desktop environment.
